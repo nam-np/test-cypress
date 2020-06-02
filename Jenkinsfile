@@ -5,6 +5,8 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo '===================== Install dependencies ====================='
+                sh 'export http_proxy="http://namnp:k60dbUetvnu@10.116.16.3:3128"'
+                sh 'export https_proxy="http://namnp:k60dbUetvnu@10.116.16.3:3128"'
                 sh 'npm i'
                 sh 'ls'
             }
