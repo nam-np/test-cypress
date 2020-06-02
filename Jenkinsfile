@@ -1,9 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Install dependencies') {
             steps {
-                echo 'Hello World'
                 echo '===================== Install dependencies ====================='
                 sh 'export http_proxy="http://namnp:k60dbUetvnu@10.116.16.20:3128"'
                 sh 'export https_proxy="http://namnp:k60dbUetvnu@10.116.16.20:3128"'
@@ -11,10 +10,14 @@ pipeline {
                 sh 'npm config set https-proxy http://namnp:k60dbUetvnu@10.116.16.20:3128'
                 sh 'npm i'
                 sh 'ls'
+            }
+            
+        }
+        stage('Test Login Success') {
+            steps {
                 echo '===================== Running ====================='
                 sh 'node_modules/.bin/cypress run  --reporter junit -s cypress/integration/sw360/homepage/login.spec.js'
             }
-            
         }
     }
 
