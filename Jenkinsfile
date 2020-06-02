@@ -11,7 +11,10 @@ pipeline {
                 sh 'npm config set https-proxy http://namnp:k60dbUetvnu@10.116.16.20:3128'
                 sh 'npm i'
                 sh 'ls'
+                echo '===================== Running ====================='
+                sh 'node_modules/.bin/cypress run  --reporter junit -s cypress/integration/sw360/homepage/login.spec.js'
             }
+            
         }
     }
 
