@@ -4,9 +4,9 @@ pipeline {
         stage('Example') {
             steps {
                 echo 'Hello World'
-                sh 'chmod +x test.sh'
-                sh './test.sh'
-                echo '11111111111111====================='
+                echo '===================== Install dependencies ====================='
+                sh 'npm i'
+                sh 'ls'
             }
         }
     }
