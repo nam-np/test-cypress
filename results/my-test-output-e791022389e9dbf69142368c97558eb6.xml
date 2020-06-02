@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2020-06-02T02:46:14" tests="0" file="cypress/integration/sw360/homepage/login.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Test Homepage" timestamp="2020-06-02T02:46:14" tests="1" failures="1" time="0">
+    <testcase name="Test Homepage &quot;before each&quot; hook for &quot;Check log-in to home&quot;" time="0" classname="&quot;before each&quot; hook for &quot;Check log-in to home&quot;">
+      <failure message="Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test Homepage`" type="CypressError"><![CDATA[CypressError: Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Test Homepage`
+    at timedOutWaitingForPageLoad (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:144463:13)
+    at http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:145424:16
+    at tryCatcher (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:10384:23)
+    at http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:5506:41
+    at tryCatcher (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:10384:23)
+    at Promise._settlePromiseFromHandler (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:8319:31)
+    at Promise._settlePromise (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:8376:18)
+    at Promise._settlePromise0 (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:8421:10)
+    at Promise._settlePromises (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:8497:18)
+    at _drainQueueStep (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:5091:12)
+    at _drainQueue (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:5084:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:5100:5)
+    at Async.drainQueues (http://10.116.41.78:28111/__cypress/runner/cypress_runner.js:4970:14)
+From Your Spec Code:
+    at Context.eval (http://10.116.41.78:28111/__cypress/tests?p=cypress/integration/sw360/homepage/login.spec.js:8:8)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

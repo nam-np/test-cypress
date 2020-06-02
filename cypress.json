@@ -1,0 +1,9 @@
+{
+    "defaultCommandTimeout": 100000,
+    "testFiles": "**/sw360/*/*.*",	
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "results/my-test-output-[hash].xml"
+      }
+
+}

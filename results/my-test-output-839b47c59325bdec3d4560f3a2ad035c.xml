@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="43.721" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-06-02T02:38:02" tests="0" file="cypress/integration/sw360/homepage/login.spec.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Test Homepage" timestamp="2020-06-02T02:38:02" tests="1" failures="0" time="43.721">
+    <testcase name="Test Homepage Check log-in to home" time="43.721" classname="Check log-in to home">
+    </testcase>
+  </testsuite>
+</testsuites>
