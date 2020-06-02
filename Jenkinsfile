@@ -7,6 +7,8 @@ pipeline {
                 echo '===================== Install dependencies ====================='
                 sh 'export http_proxy="http://namnp:k60dbUetvnu@10.116.16.20:3128"'
                 sh 'export https_proxy="http://namnp:k60dbUetvnu@10.116.16.20:3128"'
+                sh 'npm config set proxy http://namnp:k60dbUetvnu@10.116.16.20:3128'
+                sh 'npm config set https-proxy http://namnp:k60dbUetvnu@10.116.16.20:3128'
                 sh 'npm i'
                 sh 'ls'
             }
